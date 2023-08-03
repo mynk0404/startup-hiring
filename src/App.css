@@ -1,0 +1,510 @@
+/* App.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Global styles */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  } 
+}
+
+.navbar h1 {
+  margin-right: auto;
+}
+
+.nav-links {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  border-radius: 10rem;
+  padding: 0.8rem;
+  transition: transform 0.3s;
+}
+.nav-links li:hover {
+  margin-right: 20px;
+  background-color: #4b4848;
+  transform: translateY(-3px);
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-button,
+.signup-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.login-button:hover, .signup-button:hover {
+    background-color: #dee8e9;
+    color: #333;
+    transform: translateY(-3px);
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  padding: 3rem 0;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Card section styles */
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 3rem;
+}
+
+/* Feature card styles */
+.feature-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-content {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feature-card .apply-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .feature-card .apply-link:hover {
+    background-color: #0056b3;
+  }
+
+/* Dynamic numbers styles */
+.dynamic-numbers {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.number-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.number-item i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.number-item h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.number-item p {
+  font-size: 1rem;
+}
+
+/* Horizontal bar styles */
+.horizontal-bar {
+  border: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+/* Subscribe section styles */
+.subscribe-section {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+}
+
+.subscribe-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.subscribe-form h2 {
+  margin-bottom: 10px;
+}
+
+.subscribe-form p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+  width: 250px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.main-content{
+  background-size: cover;
+}
+.subscribe-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #0056b3;
+}
+
+/* CTA section styles */
+.cta-section {
+  text-align: center;
+  padding: 3rem 0;
+  color: #fff;
+}
+
+.cta-section .dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-section .cta-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-section .cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #007bff;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 790px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .card-section {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 1rem;
+  }
+
+  .feature-card .card-content {
+    padding: 1rem;
+  }
+
+  .feature-card img {
+    height: 150px;
+  }
+
+  .dynamic-numbers {
+    flex-direction: column;
+  }
+
+  .subscribe-form {
+    max-width: 100%;
+  }
+
+  .cta-section .dark-overlay {
+    padding: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .social-links {
+    margin-top: 10px;
+  }
+}
+
+.forms-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+.forms-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+}
+
+.login-form{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin-right: 30px;
+  width: 50%;
+}
+.signup-form{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin-left: 30px;
+  width: 50%;
+}
+
+.login-form h2,
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button,
+.signup-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
+}
+.login-form button:hover,
+.signup-form button:hover {
+  background-color: #020303;
+  transform: translateY(0.3rem);
+}
+.hiring-steps {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.hiring-steps h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.step {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.step i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 16px;
+  color: #555;
+}
+.reviews-section {
+  padding: 40px 0;
+  background-image: url("https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyYWRpZW50JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+  
+  background-size: cover;
+}
+
+.reviews-section h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: ghostwhite;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.review {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.527);
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: blanchedalmond;
+}
+
+.review h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review p {
+  font-size: 16px;
+  color: #ebe2e2;
+}

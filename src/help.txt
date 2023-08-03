@@ -1,0 +1,68 @@
+<FeatureCard
+           iconClass="fas fa-code"
+           title="Software Engineers"
+           description="Hire skilled software engineers from India and around the world."
+           applyLink="https://example.com/apply-software-engineer"
+           backgroundImage="https://wallpapercave.com/wp/wp7039147.png" // Replace with the correct URL or file path.
+        />
+        <FeatureCard
+           iconClass="fas fa-code"
+           title="Software Engineers"
+           description="Hire skilled software engineers from India and around the world."
+           applyLink="https://example.com/apply-software-engineer"
+           backgroundImage="https://wallpapercave.com/wp/wp7039147.png" // Replace with the correct URL or file path.
+        />
+        <FeatureCard
+           iconClass="fas fa-code"
+           title="Software Engineers"
+           description="Hire skilled software engineers from India and around the world."
+           applyLink="https://example.com/apply-software-engineer"
+           backgroundImage="https://wallpapercave.com/wp/wp7039147.png" // Replace with the correct URL or file path.
+        />
+
+
+        <div className="number-item">
+          <i className="fas fa-users"></i>
+          <h3>{candidatesRegistered}</h3>
+          <p>Candidates Registered</p>
+        </div>
+        <div className="number-item">
+          <i className="fas fa-building"></i>
+          <h3>{companiesRegistered}</h3>
+          <p>Companies Registered</p>
+        </div>
+        <div className="number-item">
+          <i className="fas fa-percent"></i>
+          <h3>{candidatesHiredPercentage}%</h3>
+          <p>Candidates Hired</p>
+        </div>
+
+
+
+        <a href="#" className="social-link">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" className="social-link">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" className="social-link">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" className="social-link">
+              <i className="fab fa-instagram"></i>
+            </a>
+
+
+            <nav className="navbar" style={{ backgroundImage: "url('your-navbar-bg-image.jpg')" }}>
+        <h1>Recruitment Portal</h1>
+        <ul className="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div className="nav-buttons">
+          <button className="login-button">Login</button>
+          <button className="signup-button">Signup</button>
+        </div>
+      </nav>
